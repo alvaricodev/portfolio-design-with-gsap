@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/qsy7khk.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <title>Alvarico</title>
+  </head>
+  <body>
+    <main>
+      <!-- Intro -->
+      <section class="intro">
+        <h1 class="intro__title">
+          <span class="intro__title-pre">Mark Jay Alvarico</span>
+          <span class="intro__title-sub">Bachelors Degree in Information Technology</span>
+        </h1>
+        <span class="intro__info">Scroll Down Smoothly to experience the animations</span>
+      </section>
+      <!-- Contents -->
+			<div class="content-wrap">
+				<div class="content">
+					<div class="title-wrap">
+						<span class="title title--up">About</span>
+						<span class="title title--down">Me</span>
+					</div>
+				</div>
+				<div class="content content--layout content--layout-1">
+					<svg class="content__img content__img--1" width="896" height="1344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 896 1344">
+					  <defs>
+					    <filter id="displacementFilter">
+					      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+					      <feDisplacementMap in="SourceGraphic" in2="noise" scale="50" xChannelSelector="R" yChannelSelector="G" />
+					    </filter>
+					    <mask id="circleMask">
+					      <circle cx="50%" cy="50%" r="0" data-value-final="820" fill="white" class="mask" style="filter: url(#displacementFilter);" />
+					    </mask>
+					  </defs>
+					  <image xlink:href="/1.jpg" width="896" height="1344" mask="url(#circleMask)" />
+					</svg>
+					<p class="content__text">Hello there! I'm Mark Jay S. Alvarico, a recent graduate with a deep love for all things programming. As an enthusiastic developer, I have embarked on a journey to create elegant and efficient solutions through code.</p>
+				</div>
+			</div>
+      <div class="content-wrap">
+				<div class="content">
+					<div class="title-wrap">
+						<span class="title title--up">My</span>
+						<span class="title title--down">Skills</span>
+					</div>
+				</div>
+				<div class="content content--layout content--layout-2">
+					<svg class="content__img content__img--2" width="1000" height="450" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 450">
+					  <defs>
+					    <filter id="displacementFilter2">
+					      <feTurbulence type="fractalNoise" baseFrequency="0.1" numOctaves="1" result="noise" />
+					      <feDisplacementMap in="SourceGraphic" in2="noise" result="displacement" scale="100" xChannelSelector="R" yChannelSelector="G" />
+						  <feMorphology operator="dilate" radius="2" result="morph" in="displacement"/>
+					    </filter>
+					    <mask id="circleMask2">
+					      <circle cx="50%" cy="50%" r="0" data-value-final="950" fill="white" class="mask" style="filter: url(#displacementFilter2);" />
+					    </mask>
+					  </defs>
+					  <image xlink:href="/2.jpg" width="1000" height="450" mask="url(#circleMask2)" />
+					</svg>
+					<p class="content__text">I really love making Web Pages in front-end designing</p>
+				</div>
+			</div>
+    </main>
+
+    <!-- <script src="./src/Flip.min.js" type="module"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
